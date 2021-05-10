@@ -12,6 +12,8 @@ namespace Practica_4
 {
     public partial class Interfaz : Form
     {
+        //Instancia de la clase Datos y 
+        //Declaración de las variables
         Datos datos = new Datos();
         string asignatura, facilitador;
         int calificacion, idtrimestre;
@@ -23,6 +25,8 @@ namespace Practica_4
             cargarCBB();
             llenarGrid();
         }
+        
+        //Coloca el texto de ayuda en cada TextBox
         private void putHint()
         {
             foreach(Panel pn in this.Controls)
@@ -38,7 +42,8 @@ namespace Practica_4
                 }
             }
         }
-
+        //Al salir del textbox, si está vacío
+        //Vuelve a Colocar el texto de ayuda
         private void Txt_Leave(object sender, EventArgs e)
         {
             TextBox txt = (TextBox)sender;
@@ -48,6 +53,8 @@ namespace Practica_4
             }
         }
 
+         //Al entrar al textbox, si está vacío
+        //Quita el texto de ayuda
         private void Txt_Enter(object sender, EventArgs e)
         {
             TextBox txt = (TextBox)sender;
@@ -56,7 +63,8 @@ namespace Practica_4
                 txt.Clear();
             }
         }
-
+        
+        //Recorre y limpia cada textBox
         private void Limpiar()
         {
             foreach (Panel pn in this.Controls)
@@ -72,6 +80,8 @@ namespace Practica_4
                 }
             }
         }
+        //Llama al método insertTrimestre de la clase Datos
+        //Para registrar un nuevo trimestre
         private void btnTrimestre_Click(object sender, EventArgs e)
         {
             string trimestre = txtTrimestre.Text;
@@ -87,11 +97,13 @@ namespace Practica_4
             cbbTrimestre.DisplayMember = "Trimestre";
             cbbTrimestre.ValueMember = "idTrimestre";
         }
+        //Llena el Combobox con los trimestres
         private void llenarGrid()
         {
             dgvDatos.DataSource = datos.Asignaturas();
         }
 
+        //Verifica el Radiobutton Marcado para llenar el DGB
         private void rbAprobada_CheckedChanged(object sender, EventArgs e)
         {
             if (rbAprobada.Checked)
@@ -105,7 +117,8 @@ namespace Practica_4
                 dgvDatos.DataSource = datos.Reprobadas();
             }
         }
-
+    
+        //Asigna valores a la variables declaradas arriba
         private void asignarValores()
         {
             asignatura = txtAsignatura.Text;
@@ -129,6 +142,8 @@ namespace Practica_4
                 literal = 'D';
             }
         }
+        //Llama al método insertAsignatura de la clase Datos
+        //Para registrar una nueva asignatura
         private void btnAsignatura_Click(object sender, EventArgs e)
         {
             asignarValores();
