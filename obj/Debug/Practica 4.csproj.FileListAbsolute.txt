@@ -1,0 +1,10 @@
+C:\Users\mosoy\source\repos\Practica 4\bin\Debug\Practica 4.exe.config
+C:\Users\mosoy\source\repos\Practica 4\bin\Debug\Practica 4.exe
+C:\Users\mosoy\source\repos\Practica 4\bin\Debug\Practica 4.pdb
+C:\Users\mosoy\source\repos\Practica 4\obj\Debug\Practica 4.csprojAssemblyReference.cache
+C:\Users\mosoy\source\repos\Practica 4\obj\Debug\Practica_4.Interfaz.resources
+C:\Users\mosoy\source\repos\Practica 4\obj\Debug\Practica_4.Properties.Resources.resources
+C:\Users\mosoy\source\repos\Practica 4\obj\Debug\Practica 4.csproj.GenerateResource.cache
+C:\Users\mosoy\source\repos\Practica 4\obj\Debug\Practica 4.csproj.CoreCompileInputs.cache
+C:\Users\mosoy\source\repos\Practica 4\obj\Debug\Practica 4.exe
+C:\Users\mosoy\source\repos\Practica 4\obj\Debug\Practica 4.pdb
